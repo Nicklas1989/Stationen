@@ -4,8 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-    <title>My first VR site</title>
+    <title>Station</title>
+    <!-- latest aframe script-->
     <script src="https://rawgit.com/aframevr/aframe/master/dist/aframe.min.js"></script>
+
+    <!-- script for aframe-text-component to label gates between stations-->
     <script src="https://rawgit.com/ngokevin/aframe-text-component/master/dist/aframe-text-component.min.js"></script>
 
 
@@ -14,9 +17,29 @@
 
 <script>
 </script>
-<a-scene fog="type: linear; near: 2; far: 30; color: white" vr-mode-ui="enabled: true">
 
-    <a-entity position="-1 0 -1.5">
+
+<!--scene with fog-->
+<a-scene <!--fog="type: linear; near: 2; far: 30; color: white" vr-mode-ui="enabled: true"-->>
+
+<!--preloading pictures, audio etc.-->
+    <a-assets>
+        <img id="waldboden" src="waldboden.jpg">
+        <img id="beton" src="beton.jpg">
+        <img id="sand" src="sand.png">
+        <img id="einstein" src="einstein.jpg">
+        <audio id="laugh" src="laugh.wav"></audio>
+        <img id="tickle" src="tickle.PNG">
+    </a-assets>
+
+    <a-assets>
+        <img id="weg" src="weg.jpg">
+    </a-assets>
+
+<!--sky-->
+    <a-sky color="white"></a-sky>
+<!--camera and cursor-->
+    <a-entity position="-55 1 37" rotation="0 -90 0">
         <a-entity camera
                   look-controls wasd-controls
                   position="0 1 4"
@@ -34,16 +57,185 @@
             </a-entity>
         </a-entity>
     </a-entity>
+<!--station 2-->
 
+    <a-entity position="-3 1 35" rotation="0 -90 0">
+        <!--gate with label between station 1 and station 2-->
+        <a-entity position="4 1 15" geometry="primitive: box;width: 1; height: 5; depth: 1" material="color: grey"></a-entity>
+        <a-entity position="0 1 15" geometry="primitive: box;width: 1; height: 5; depth: 1" material="color: grey"></a-entity>
+        <a-entity position="2 4 15" geometry="primitive: box;width: 5; height: 1; depth: 1" material="color: grey"></a-entity>
+
+        <a-entity
+                geometry="primitive: box"
+                text="text: Station 2"
+                position="0.6 3.5 15.5"
+                material="color:#BCF5A9"
+        ></a-entity>
+    </a-entity>
+
+<!-- path between station 1 and station 2-->
+    <a-entity position="-20 -0.1 37" rotation="-90 0 0" geometry="primitive: plane;  width:10; height:3" material="src: #weg ;side:double; repeat: 2 2"></a-entity>
+    <a-entity position="-30 -0.1 37" rotation="-90 0 0" geometry="primitive: plane;  width:10; height:3" material="src: #weg ;side:double; repeat: 2 2"></a-entity>
+
+
+<!---yellow box looking at green cylinder-->
+    <a-entity position="-1 1 35">
+        <a-box position="-1 1 0" rotation="45 45 0" color="yellow" width="1" height="1" depth="0.5" look-at="a-cylinder"></a-box>
+
+
+<!--- red cube rotating on its y-axis-->
+        <a-box color="red" rotation="0 45 0">
+            <a-animation attribute="rotation"  repeat="indefinite" to="0 360 0"></a-animation>
+
+        </a-box>
+<!--green cylinder moving on x-axis between two points-->
+        <a-cylinder color="green" position="3 -0.5 0">
+            <a-animation attribute="position" from="-12 6 -12" to="8 3 -2" dur="1500" repeat="indefinite" fill="forwards" direction="alternate"></a-animation>
+
+        </a-cylinder>
+<!-- blue ball moving on y-axis between two points-->
+        <a-sphere color="blue" position="-3 0 0">
+            <a-animation attribute="position" from="-3 0 0" to="-3 3 0" dur="1500" repeat="indefinite" fill="forwards" direction="alternate"></a-animation>
+        </a-sphere>
+ <!-- orange cone looking at green cylinder-->
+        <a-cone position="2 0 0" rotation="0 -45 90" color="tomato" radius-bottom="0.5" look-at="a-cylinder" radius-top="0.02"></a-cone>
+
+    </a-entity>
+<!--floor-->
     <a-entity
-    geometry="primitive: box; width: 100; height: 100; depth: 0.01"
-    material="color:#669900"
-    position="0 -0.1 0"
-    rotation="90 0 0"
+            geometry="primitive: circle; radius: 17 "
+            material="src: #beton; repeat: 10 10"
+            position="-1 -0.15 35"
+            rotation="-90 0 0"
 
     ></a-entity>
 
-    <a-sky color="white"></a-sky>
+
+
+
+<!--station 1-->
+
+<!--floor-->
+        <a-entity
+                geometry="primitive: circle; radius: 25 "
+                material="src:#sand; repeat:10 10"
+                position="-40 -0.17 37"
+                rotation="-90 0 0"
+
+        ></a-entity>
+<!-- red cube -->
+        <a-box position="-40 2 37" color="red" rotation="0 45 0"></a-box>
+<!--- gate and label infront of station 1--->
+    <a-entity position="-35 1 35" rotation="0 -90 0">
+        <a-entity position="4 1 15" geometry="primitive: box;width: 1; height: 5; depth: 1" material="color: grey"></a-entity>
+        <a-entity position="0 1 15" geometry="primitive: box;width: 1; height: 5; depth: 1" material="color: grey"></a-entity>
+        <a-entity position="2 4 15" geometry="primitive: box;width: 5; height: 1; depth: 1" material="color: grey"></a-entity>
+
+        <a-entity
+                geometry="primitive: box"
+                text="text: Station 1"
+                position="0.6 3.5 15.5"
+                material="color:#BCF5A9"
+        ></a-entity>
+    </a-entity>
+<!--path infront of station 1-->
+    <a-entity position="-54 -0.1 37" rotation="-90 0 0" geometry="primitive: plane;  width:10; height:3" material="src: #weg ;side:double; repeat: 2 2"></a-entity>
+
+
+<!---path between station 2 and station 3 -->
+        <a-entity position="2 -0.1 15" rotation="-90 90 0" geometry="primitive: plane;  width:10; height:3" material="src: #weg ;side:double; repeat: 2 2"></a-entity>
+    <a-entity position="2 -0.1 25" rotation="-90 90 0" geometry="primitive: plane;  width:10; height:3" material="src: #weg ;side:double; repeat: 2 2"></a-entity>
+
+<!--gate with label between station 2 and station 3-->
+    <a-entity position="4 1 15" geometry="primitive: box;width: 1; height: 5; depth: 1" material="color: grey"></a-entity>
+    <a-entity position="0 1 15" geometry="primitive: box;width: 1; height: 5; depth: 1" material="color: grey"></a-entity>
+    <a-entity position="2 4 15" geometry="primitive: box;width: 5; height: 1; depth: 1" material="color: grey"></a-entity>
+
+    <a-entity
+            geometry="primitive: box"
+            text="text: Station 3"
+            position="0.6 3.5 15.5"
+            material="color:#BCF5A9"
+    ></a-entity>
+
+<!--station 4-->
+<!-- path between station 2 and station 4-->
+    <a-entity position="0 -0.1 60" rotation="-90 90 0" geometry="primitive: plane;  width:10; height:3" material="src: #weg ;side:double; repeat: 2 2"></a-entity>
+    <a-entity position="0 -0.1 50" rotation="-90 90 0" geometry="primitive: plane;  width:10; height:3" material="src: #weg ;side:double; repeat: 2 2"></a-entity>
+<!--gate with label between station 2 and station 4-->
+    <a-entity position="2 1 60" geometry="primitive: box;width: 1; height: 5; depth: 1" material="color: grey"></a-entity>
+    <a-entity position="-2 1 60" geometry="primitive: box;width: 1; height: 5; depth: 1" material="color: grey"></a-entity>
+    <a-entity position="0 4 60" geometry="primitive: box;width: 5; height: 1; depth: 1" material="color: grey"></a-entity>
+
+    <a-entity
+            geometry="primitive: box"
+            text="text: Station 4"
+            position="1.25 3.5 59."
+            material="color:#BCF5A9"
+            rotation="0 180 0"
+    ></a-entity>
+
+
+<!--floor-->
+    <a-entity
+            geometry="primitive: circle; radius: 20 "
+            material="color:#A5B7C9"
+            position="-1 -0.17 70"
+            rotation="-90 0 0"
+
+    ></a-entity>
+
+    <a-entity position="-1 0 70" rotation="0 140 0">
+
+        <a-assets>
+            <a-asset-item id="why-male-models" src="man.dae"></a-asset-item>
+        </a-assets>
+
+
+        <a-entity id="model" position="0 0 -2">
+            <a-animation attribute="rotation" from="0 -30 0" to="0 330 0" dur="15000" easing="linear" repeat="inifite"></a-animation>
+            <a-collada-model position="-.35 0 .55" rotation="0 -20 0" scale="1.5 1.5 1.5" src="#why-male-models"></a-collada-model>
+            <a-image src="radial-shadow-2.png" rotation="-90 0 0" scale="0.5 0.5 0.5"></a-image>
+        </a-entity>
+
+        <a-curvedimage id="mozvr-logo" src="mozvr.png" radius="5.7" theta-length="36" height="1" position="0 2.6 0" opacity="0.5">
+            <a-animation attribute="rotation" from="0 10 0" to="0 200 0" begin="500" dur="1000"></a-animation>
+        </a-curvedimage>
+
+        <a-image id="price" src="price.png" width="7" height="3.5" scale="0.2 0.2 0.2">
+            <a-animation attribute="position" from="0 2.8 -6" to="2.25 2.8 -6" begin="1000" dur="1000"></a-animation>
+        </a-image>
+
+        <a-cylinder id="goggles" color="#101010" height="0.02" radius="0.8">
+            <a-animation attribute="rotation" from="-270 0 0" to="-90 0 0" dur="750" begin="1000" fill="both"></a-animation>
+            <a-animation attribute="position" from="8 0 -9" to="8 3.5 -9" dur="750" begin="1000" fill="both"></a-animation>
+            <a-image src="goggles.png" width="2" height="1" rotation="90 0 0" position="0 -.05 0" scale=".4 .4 .4"></a-image>
+        </a-cylinder>
+
+        <a-curvedimage id="stereoscopic-fall-collection-text" src="fall.png" radius="5.7" theta-length="18" height=".45" position="0 0.9 0" scale=".4 .4 .4">
+            <a-animation attribute="rotation" from="0 180 0" to="0 210 0" begin="750" dur="1000"></a-animation>
+        </a-curvedimage>
+
+        <a-curvedimage id="shoes" src="shoes.png" radius="5.7" theta-length="18" height=".8" position="0 0.9 0" scale=".4 .4 .4">
+            <a-animation attribute="rotation" from="0 180 0" to="0 130 0" begin="750" dur="1000"></a-animation>
+        </a-curvedimage>
+
+        <a-entity>
+            <a-cylinder position="0 0.5 0" radius="4" height="1.6" side="back" open-ended="true" color="#E5E5E5"></a-cylinder>
+        </a-entity>
+    </a-entity>
+
+    <!--station 3-->
+<!--floor-->
+    <a-entity
+    geometry="primitive: circle; radius: 20 "
+    material="src: #waldboden; repeat:20 20"
+    position="0 -0.2 0"
+    rotation="-90 0 0"
+
+    ></a-entity>
+
+<!--preloading video-->
 <a-assets>
     <video id="video" src="video3.mp4"><video>
 </a-assets>
@@ -55,6 +247,7 @@
 
 
 
+<!--video-->
   <a-entity
             geometry="primitive: plane ; width: 2.5; height: 1.4"
             material="color:#6E6E6E"
@@ -62,42 +255,64 @@
             rotation="0 180 0"
 
   >
-      <a-event name="mouseenter" material="src: #video"></a-event>
 
+      <a-event name="mouseenter" material="src: #video"></a-event>
 
   </a-entity>
 
-    <a-entity
-    geometry="primitive:box; width: 1 height: 1 depth:1 "
-    material="color:red"
-    position="2 1 -2"
 
+<!--plane for video-->
 
-    >
-        <a-event name="mouseenter" scale="3 1 1" color="#FFC65D"></a-event>
-        <a-event name="mouseleave" scale="1 1 1" color="#F16745"></a-event>
-    </a-entity>
-
-
-
-    <a-entity
-            geometry="primitive: box"
-            text="text: Welcome to VR Forest!"
-            position="-4 2 -2"
-            material="color:#BCF5A9"
-    ></a-entity>
-
-
-
-
-
-    <a-entity
+   <a-entity
             geometry="primitive: box; width: 3; height: 3; depth: 0.1"
             material="color:#6E6E6E"
             position="-4 0 -5"
             rotation="0 0 0"
 
+
     ></a-entity>
+
+<!--Station 5-->
+<a-entity position="30 1 35" rotation="0 -90 0">
+<!--cube with on-click tickle-->
+<a-entity
+        geometry="primitive:box"
+        material="src:#tickle"
+        sound="src: #laugh; on: click"
+
+></a-entity>
+<!--background wall-->
+<a-curvedimage color="black" height="3.0" radius="1" theta-length="180"
+               rotation="0 90 0" scale="10 10 10"></a-curvedimage>
+
+<!--floor-->
+    <a-entity
+    geometry="primitive: circle; radius: 25 "
+    material="color:grey; repeat:10 10"
+    position="0 -1.3 0"
+    rotation="-90 0 0"
+
+    ></a-entity>
+
+</a-entity>
+<!---gate with label between station 2 and station 5-->
+<a-entity position="25 1 35" rotation="0 -90 0">
+
+    <a-entity position="4 1 15" geometry="primitive: box;width: 1; height: 5; depth: 1" material="color: grey"></a-entity>
+    <a-entity position="0 1 15" geometry="primitive: box;width: 1; height: 5; depth: 1" material="color: grey"></a-entity>
+    <a-entity position="2 4 15" geometry="primitive: box;width: 5; height: 1; depth: 1" material="color: grey"></a-entity>
+
+    <a-entity
+            geometry="primitive: box"
+            text="text: Station 5"
+            position="0.6 3.5 15.5"
+            material="color:#BCF5A9"
+    ></a-entity>
+
+</a-entity>
+<!--path between station 2 and station 5-->
+<a-entity position="12 0 37 " rotation="-90 0 0" geometry="primitive: plane;  width:10; height:3" material="src: #weg ;side:double; repeat: 2 2"></a-entity>
+
 
 </a-scene>
 </body>
