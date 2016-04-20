@@ -6,7 +6,9 @@
           content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     <title>Station</title>
     <!-- latest aframe script-->
-    <script src="https://rawgit.com/aframevr/aframe/master/dist/aframe.min.js"></script>
+    <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
+
+    <!--- unstable script: https://rawgit.com/aframevr/aframe/master/dist/aframe.min.js -->
 
     <!-- script for aframe-text-component to label gates between stations-->
     <script src="https://rawgit.com/ngokevin/aframe-text-component/master/dist/aframe-text-component.min.js"></script>
@@ -15,12 +17,38 @@
 </head>
 <body>
 
+<!-- output of function for camera position on the UI--->
+<p id="cameraposition" style="position: absolute;
+    left: 500px;
+    top: 0px;
+    z-index: 10;"></p>
+
+<!---<p id="trigger" style="position: absolute;
+    left: 1000px;
+    top: 0px;
+    z-index: 10;"></p>-->
+
 <script>
+/* funtion to post position of camera on each frame*/
+    (AFRAME.aframeCore || AFRAME).registerComponent('logging', {
+        init: function () {},
+        update: function () { this.tick(); },
+        tick: function () {
+            var camera = this.el.querySelector('[camera]');
+            console.log(camera.getAttribute('position'));
+            var p = camera.getAttribute('position');
+            document.getElementById('cameraposition').innerHTML ='X: '+ p.x + '  Y: ' + p.y + '  Z: ' + p.z;
+
+            /*if (p.x>=5.0) {document.getElementById('trigger').innerHTML="trigger";}*/
+        },
+        remove: function () {}
+    });
+
 </script>
 
 
 <!--scene with fog-->
-<a-scene <!--fog="type: linear; near: 2; far: 30; color: white" vr-mode-ui="enabled: true"-->>
+<a-scene fog="type: linear; near: 2; far: 30; color: white" vr-mode-ui="enabled: true" logging stats=true>
 
 <!--preloading pictures, audio etc.-->
     <a-assets>
@@ -28,7 +56,7 @@
         <img id="beton" src="beton.jpg">
         <img id="sand" src="sand.png">
         <img id="einstein" src="einstein.jpg">
-        <audio id="laugh" src="laugh.wav"></audio>
+        <audio id="laugh" src="laugh.mp3"></audio>
         <img id="tickle" src="tickle.PNG">
     </a-assets>
 
@@ -57,6 +85,16 @@
             </a-entity>
         </a-entity>
     </a-entity>
+
+<!--overall floor-->
+    <a-entity
+            geometry="primitive: circle; radius: 500 "
+            material="color:#736A53"
+            position="-0 -0.2 0"
+            rotation="-90 0 0"
+
+    ></a-entity>
+
 <!--station 2-->
 
     <a-entity position="-3 1 35" rotation="0 -90 0">
@@ -278,7 +316,7 @@
 <a-entity
         geometry="primitive:box"
         material="src:#tickle"
-        sound="src: #laugh; on: click"
+        sound="src: laugh.mp3; on: click"
 
 ></a-entity>
 <!--background wall-->
