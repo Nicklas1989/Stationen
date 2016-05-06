@@ -14,3 +14,4 @@ This example is part of my bachelor thesis at HS Pforzheim, Germany.
 If you have any questions feel free to contact me at triernic@hs-pforzheim.de
 
 
+To run this example just download the .zip folder and run the index.html
