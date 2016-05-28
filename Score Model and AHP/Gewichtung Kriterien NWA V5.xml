@@ -1,0 +1,649 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Nicklas</Author>
+  <LastAuthor>Nicklas</LastAuthor>
+  <Created>2016-05-28T16:27:51Z</Created>
+  <LastSaved>2016-05-28T16:29:53Z</LastSaved>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>12300</WindowHeight>
+  <WindowWidth>28800</WindowWidth>
+  <WindowTopX>0</WindowTopX>
+  <WindowTopY>0</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s16" ss:Name="Prozent">
+   <NumberFormat ss:Format="0%"/>
+  </Style>
+  <Style ss:ID="s17" ss:Name="Standard 2">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s19" ss:Parent="s17">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+  </Style>
+  <Style ss:ID="s20" ss:Parent="s17">
+   <Borders/>
+  </Style>
+  <Style ss:ID="s22" ss:Parent="s17">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Interior ss:Color="#D9D9D9" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s23" ss:Parent="s17">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Interior ss:Color="#D9D9D9" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s24" ss:Parent="s17">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Interior ss:Color="#FFD966" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s25" ss:Parent="s17">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Segoe UI" x:Family="Swiss" ss:Size="11" ss:Color="#363636"/>
+  </Style>
+  <Style ss:ID="s26" ss:Parent="s16">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <NumberFormat ss:Format="Percent"/>
+  </Style>
+  <Style ss:ID="s27" ss:Parent="s17">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s28" ss:Parent="s17">
+   <Borders/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s29" ss:Parent="s17">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Interior ss:Color="#D9D9D9" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s30" ss:Parent="s17">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s31" ss:Parent="s17">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Interior ss:Color="#D9D9D9" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s32" ss:Parent="s17">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Interior ss:Color="#D9D9D9" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s33" ss:Parent="s17">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#FF0000"/>
+   <Interior ss:Color="#D9D9D9" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s34" ss:Parent="s17">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Gewichtung Kriterien">
+  <Table ss:ExpandedColumnCount="15" ss:ExpandedRowCount="50" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s17" ss:DefaultColumnWidth="60"
+   ss:DefaultRowHeight="15">
+   <Column ss:Index="2" ss:StyleID="s17" ss:Width="156"/>
+   <Column ss:StyleID="s17" ss:Width="186.75"/>
+   <Column ss:StyleID="s17" ss:Width="120"/>
+   <Column ss:StyleID="s17" ss:Width="157.5"/>
+   <Column ss:StyleID="s17" ss:Width="186.75"/>
+   <Column ss:StyleID="s17" ss:Width="120"/>
+   <Column ss:StyleID="s17" ss:Width="186.75"/>
+   <Column ss:StyleID="s17" ss:Width="120"/>
+   <Column ss:StyleID="s17" ss:Width="114"/>
+   <Column ss:StyleID="s17" ss:Width="84"/>
+   <Column ss:StyleID="s17" ss:Width="110.25"/>
+   <Column ss:StyleID="s17" ss:Width="158.25"/>
+   <Column ss:StyleID="s17" ss:Width="153.75"/>
+   <Row ss:AutoFitHeight="0"/>
+   <Row ss:Index="4" ss:AutoFitHeight="0">
+    <Cell ss:MergeAcross="5" ss:StyleID="s34"><Data ss:Type="String">Gewichtung Tragekomfort</Data></Cell>
+    <Cell ss:StyleID="s19"/>
+    <Cell ss:StyleID="s20"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s22"/>
+    <Cell ss:StyleID="s22"/>
+    <Cell ss:StyleID="s23"/>
+    <Cell ss:StyleID="s23"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s22"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s22"/>
+    <Cell ss:StyleID="s22"/>
+    <Cell ss:StyleID="s22"/>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">Gewicht</Data></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">Polsterung</Data></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">Summe</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s22"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">Gewicht der Brille</Data></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">Gewicht</Data></Cell>
+    <Cell ss:StyleID="s22"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s25" ss:Formula="=COUNTIF(RC[-2]:RC[-1],1)"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s26" ss:Formula="=RC[-1]/SUM(RC[-1]:R[1]C[-1])"><Data
+      ss:Type="Error">#DIV/0!</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s22"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">Wie bequem ist die Polsterung?</Data></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">Polsterung</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-1]C[1]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s22"/>
+    <Cell ss:StyleID="s25" ss:Formula="=COUNTIF(RC[-2]:RC[-1],2)"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s26" ss:Formula="=RC[-1]/SUM(R[-1]C6:RC6)"><Data
+      ss:Type="Error">#DIV/0!</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s28"/>
+    <Cell ss:StyleID="s28"/>
+    <Cell ss:StyleID="s28"/>
+    <Cell ss:StyleID="s28"/>
+    <Cell ss:StyleID="s28"/>
+    <Cell ss:StyleID="s28"/>
+    <Cell ss:StyleID="s28"/>
+    <Cell ss:StyleID="s28"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:MergeAcross="8" ss:StyleID="s34"><Data ss:Type="String">Gewichtung Qualität der Immersion</Data></Cell>
+    <Cell ss:StyleID="s19"/>
+    <Cell ss:StyleID="s20"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s22"/>
+    <Cell ss:StyleID="s22"/>
+    <Cell ss:StyleID="s23"/>
+    <Cell ss:StyleID="s23"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s22"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s22"/>
+    <Cell ss:StyleID="s22"/>
+    <Cell ss:StyleID="s22"/>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">Displayauflösung</Data></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">Qualität der grafischen Texturen</Data></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">Präzession des Trackings</Data></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">FPS</Data></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">Sichtfeld</Data></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">Summe</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s22"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s22"/>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">Displayauflösung</Data></Cell>
+    <Cell ss:StyleID="s22"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s25" ss:Formula="=COUNTIF(RC[-5]:RC[-1],1)"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s26" ss:Formula="=RC[-1]/SUM(RC[-1]:R[4]C[-1])"><Data
+      ss:Type="Error">#DIV/0!</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="30">
+    <Cell ss:StyleID="s22"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Wie aufwändig ist die Grafik&#10; der Simulation</Data></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">Qualität der grafischen Texturen</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-1]C[1]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s22"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s25" ss:Formula="=COUNTIF(RC[-5]:RC[-1],2)"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s26" ss:Formula="=RC[-1]/SUM(R[-1]C[-1]:R[3]C[-1])"><Data
+      ss:Type="Error">#DIV/0!</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="45">
+    <Cell ss:StyleID="s22"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Wie präzise kann die Simulation&#10;meinen Kopfbewegungen folgen</Data></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">Präzession des Trackings</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-2]C[2]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-1]C[1]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s22"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s25" ss:Formula="=COUNTIF(RC[-5]:RC[-1],3)"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s26" ss:Formula="=RC[-1]/SUM(R[-2]C[-1]:R[2]C[-1])"><Data
+      ss:Type="Error">#DIV/0!</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s22"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">Bilder pro Sekunde </Data></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">FPS</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-3]C[3]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-2]C[2]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-1]C[1]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s22"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s25" ss:Formula="=COUNTIF(RC[-5]:RC[-1],4)"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s26" ss:Formula="=RC[-1]/SUM(R[-3]C[-1]:R[1]C[-1])"><Data
+      ss:Type="Error">#DIV/0!</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="45">
+    <Cell ss:StyleID="s22"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Welches Sichtfeld bietet die Darstellung&#10;durch die Brille</Data></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">Sichtfeld</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-4]C[4]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-3]C[3]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-2]C[2]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-1]C[1]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s22"/>
+    <Cell ss:StyleID="s25" ss:Formula="=COUNTIF(RC[-5]:RC[-1],5)"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s26" ss:Formula="=RC[-1]/SUM(R[-4]C[-1]:RC[-1])"><Data
+      ss:Type="Error">#DIV/0!</Data></Cell>
+   </Row>
+   <Row ss:Index="21" ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:MergeAcross="4" ss:StyleID="s34"><Data ss:Type="String">Gewichtung Benutzerfreundlichkeit</Data></Cell>
+    <Cell ss:StyleID="s20"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s22"/>
+    <Cell ss:StyleID="s22"/>
+    <Cell ss:StyleID="s23"/>
+    <Cell ss:StyleID="s23"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s22"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s22"/>
+    <Cell ss:StyleID="s22"/>
+    <Cell ss:StyleID="s22"/>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">Inbetriebnahme</Data></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">Bedienbarkeit</Data></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">Dokumentation</Data></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">Summe</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="30">
+    <Cell ss:StyleID="s22"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Wie leicht fällt die erste &#10;Inbetriebnahme</Data></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">Inbetriebnahme</Data></Cell>
+    <Cell ss:StyleID="s22"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s25" ss:Formula="=COUNTIF(RC[-3]:RC[-1],1)"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s26" ss:Formula="=RC[-1]/SUM(RC[-1]:R[2]C[-1])"><Data
+      ss:Type="Error">#DIV/0!</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="45">
+    <Cell ss:StyleID="s22"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Wie leicht fällt die der Umgang&#10;bzw. die Handhabung mit der Brille</Data></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">Bedienbarkeit</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-1]C[1]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s22"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s25" ss:Formula="=COUNTIF(RC[-3]:RC[-1],2)"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s26" ss:Formula="=RC[-1]/SUM(R[-1]C[-1]:R[1]C[-1])"><Data
+      ss:Type="Error">#DIV/0!</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="30">
+    <Cell ss:StyleID="s22"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Welche Hilfestellung wird vom&#10;Hersteller bereitgestellt</Data></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">Dokumentation</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-2]C[2]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-1]C[1]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s22"/>
+    <Cell ss:StyleID="s25" ss:Formula="=COUNTIF(RC[-3]:RC[-1],3)"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s26" ss:Formula="=RC[-1]/SUM(R[-2]C[-1]:RC[-1])"><Data
+      ss:Type="Error">#DIV/0!</Data></Cell>
+   </Row>
+   <Row ss:Index="31" ss:AutoFitHeight="0">
+    <Cell ss:MergeAcross="12" ss:StyleID="s34"><Data ss:Type="String">Gewichtung gesamt</Data></Cell>
+    <Cell ss:StyleID="s30"/>
+    <Cell ss:StyleID="s19"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s32"/>
+    <Cell ss:StyleID="s32"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s32"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="45">
+    <Cell ss:StyleID="s22"/>
+    <Cell ss:StyleID="s22"/>
+    <Cell ss:StyleID="s22"/>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">Kosten</Data></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">Robustheit</Data></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">Tragekomfort</Data></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">Qualität der Immersion</Data></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">Bedienbarkeit/Benutzerfreundlichkeit</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Mobilität des Systems &#10;(Kabel, Pc notwendig)</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Open Source&#10; Software</Data></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">Open Hardware</Data></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">Verfügbare Software</Data></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">Entwicklung für diese Plattform</Data></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">Summe</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="30">
+    <Cell ss:StyleID="s22"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Anschaffung als auch evtl. &#10;laufende Kosten</Data></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">Kosten</Data></Cell>
+    <Cell ss:StyleID="s22"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s25" ss:Formula="=COUNTIF(RC[-10]:RC[-1],1)"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s26" ss:Formula="=RC[-1]/SUM(RC[-1]:R[9]C[-1])"><Data
+      ss:Type="Error">#DIV/0!</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s22"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">Langlebigkeit der Brille</Data></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">Robustheit</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-1]C[1]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s33"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s25" ss:Formula="=COUNTIF(RC[-10]:RC[-1],2)"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s26" ss:Formula="=RC[-1]/SUM(R[-1]C[-1]:R[8]C[-1])"><Data
+      ss:Type="Error">#DIV/0!</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s22"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">siehe Unterkriterien</Data></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">Tragekomfort</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-2]C[2]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-1]C[1]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s22"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s25" ss:Formula="=COUNTIF(RC[-10]:RC[-1],3)"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s26" ss:Formula="=RC[-1]/SUM(R[-2]C[-1]:R[7]C[-1])"><Data
+      ss:Type="Error">#DIV/0!</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s22"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">siehe Unterkriterien</Data></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">Qualität der Immersion</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-3]C[3]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-2]C[2]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-1]C[1]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s22"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s25" ss:Formula="=COUNTIF(RC[-10]:RC[-1],4)"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s26" ss:Formula="=RC[-1]/SUM(R[-3]C[-1]:R[6]C[-1])"><Data
+      ss:Type="Error">#DIV/0!</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s22"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">siehe Unterkriterien</Data></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">Bedienbarkeit/Benutzerfreundlichkeit</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-4]C[4]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-3]C[3]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-2]C[2]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-1]C[1]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s22"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s25" ss:Formula="=COUNTIF(RC[-10]:RC[-1],5)"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s26" ss:Formula="=RC[-1]/SUM(R[-4]C[-1]:R[5]C[-1])"><Data
+      ss:Type="Error">#DIV/0!</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="45">
+    <Cell ss:StyleID="s22"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Ist ein PC nötig?&#10;Wird die Bewegungsfreiheit&#10;durch Kabel eingeschränkt? </Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Mobilität des Systems </Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-5]C[5]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-4]C[4]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-3]C[3]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-2]C[2]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-1]C[1]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s22"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s25" ss:Formula="=COUNTIF(RC[-10]:RC[-1],6)"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s26" ss:Formula="=RC[-1]/SUM(R[-5]C[-1]:R[4]C[-1])"><Data
+      ss:Type="Error">#DIV/0!</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="30">
+    <Cell ss:StyleID="s22"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Ist der Software Code öffentlich&#10;zugänglich?</Data></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">Open Source Software</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-6]C[6]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-5]C[5]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-4]C[4]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-3]C[3]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-2]C[2]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-1]C[1]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s22"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s25" ss:Formula="=COUNTIF(RC[-10]:RC[-1],7)"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s26" ss:Formula="=RC[-1]/SUM(R[-6]C[-1]:R[3]C[-1])"><Data
+      ss:Type="Error">#DIV/0!</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="45">
+    <Cell ss:StyleID="s22"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Werden die verwendeten, &#10;technischen Komponenten vom &#10;Hersteller offgelegt?</Data></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">Open Hardware</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-7]C[7]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-6]C[6]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-5]C[5]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-4]C[4]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-3]C[3]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-2]C[2]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-1]C[1]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s22"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s25" ss:Formula="=COUNTIF(RC[-10]:RC[-1],8)"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s26" ss:Formula="=RC[-1]/SUM(R[-7]C[-1]:R[2]C[-1])"><Data
+      ss:Type="Error">#DIV/0!</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s22"><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Anzahl und Art</Data></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">Verfügbare Software</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-8]C[8]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-7]C[7]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-6]C[6]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-5]C[5]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-4]C[4]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-3]C[3]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-2]C[2]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-1]C[1]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s22"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s25" ss:Formula="=COUNTIF(RC[-10]:RC[-1],9)"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s26" ss:Formula="=RC[-1]/SUM(R[-8]C[-1]:R[1]C[-1])"><Data
+      ss:Type="Error">#DIV/0!</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="30">
+    <Cell ss:StyleID="s22"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Wie leicht ist eine native Entwicklung möglich?</Data></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">Entwicklung für diese Plattform</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-9]C[9]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-8]C[8]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-7]C[7]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-6]C[6]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-5]C[5]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-4]C[4]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-3]C[3]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-2]C[2]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s27" ss:Formula="=R[-1]C[1]"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s22"/>
+    <Cell ss:StyleID="s25" ss:Formula="=COUNTIF(RC[-10]:RC[-1],10)"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s26" ss:Formula="=RC[-1]/SUM(R[-9]C[-1]:RC[-1])"><Data
+      ss:Type="Error">#DIV/0!</Data></Cell>
+   </Row>
+   <Row ss:Index="50" ss:AutoFitHeight="0">
+    <Cell ss:Index="9"><Data ss:Type="String"> </Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.78740157499999996" x:Left="0.7" x:Right="0.7"
+     x:Top="0.78740157499999996"/>
+   </PageSetup>
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Zoom>55</Zoom>
+   <Selected/>
+   <LeftColumnVisible>3</LeftColumnVisible>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>23</ActiveRow>
+     <ActiveCol>12</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>
