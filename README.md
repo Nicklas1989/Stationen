@@ -1,8 +1,8 @@
-# Stationen
+# Thesis
 
 Here you can find everything about my bachelorthesis i wrote at HS Pforzheim, Germany.
 
-You can find the thesis itself, aswell as all Data that is used for the utility analysis and the AHP.
+You can find the thesis itself, aswell as all data that is used for the utility analysis and the AHP.
 
 The exercise shows a number of stations.
 
